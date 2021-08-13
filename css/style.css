@@ -17,7 +17,7 @@ a {
 }
 
 .main {
-  background: url(../imgs/header-shapes-mobile.svg);
+  background: url(../img/header-shapes-mobile.svg);
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
@@ -32,10 +32,10 @@ a {
 
 .mobile-menu {
   display: none;
-  content: url(../imgs/icon-menu.png);
+  content: url(../img/icon-menu.png);
 }
 
-.name {
+.intro {
   font-weight: bold;
   font-size: 40px;
   line-height: 52px;
@@ -58,14 +58,11 @@ a {
 }
 
 .social-icons {
-  content: url(../imgs/social-media-icons.svg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
 }
-
-/* to troubleshoot only
-.header {
-  border-bottom: 1px solid #E2E8F0;
-}
-*/
 
 .navbar {
   display: flex;
