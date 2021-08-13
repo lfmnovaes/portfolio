@@ -6,6 +6,7 @@
 
 html {
   font-family: 'Poppins', sans-serif;
+  font-style: normal;
 }
 
 li {
@@ -16,19 +17,38 @@ a {
   text-decoration: none;
 }
 
-.main {
-  background: url(../img/header-shapes-mobile.svg);
-  background-repeat: no-repeat;
+.d-flex {
   display: flex;
+  align-items: center;
+}
+
+.main {
+  background: url(../img/header-shapes-mobile.svg) no-repeat fixed;
+  background-size: contain;
+  background-position: 0, center;
   flex-direction: column;
   align-items: flex-start;
   padding: 114px 24px;
 }
 
+.navbar {
+  justify-content: space-between;
+  padding: 16px 24px;
+}
+
+.nav-logo {
+  font-size: 18px;
+  font-weight: bold;
+  color: #6070ff;
+  text-align: center;
+}
+
+.hamburger {
+  content: url(../img/icon-menu.png);
+}
+
 .button {
-  display: flex;
   justify-content: center;
-  align-items: center;
   padding: 12px;
   background: #fff;
   border: 1px solid #7f8cff;
@@ -54,21 +74,14 @@ a {
   margin: 12px 0;
 }
 
-.mobile-menu {
-  display: none;
-  content: url(../img/icon-menu.png);
-}
-
 .intro {
   font-weight: bold;
   font-size: 40px;
   line-height: 52px;
-  align-items: center;
-  color: #172840;
+  color: #172b4d;
 }
 
 .description {
-  font-style: normal;
   font-weight: normal;
   font-size: 16px;
   color: #344563;
@@ -76,69 +89,11 @@ a {
 
 .social {
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
   color: #7f8cff;
 }
 
 .social-icons {
-  display: flex;
-  align-items: center;
   justify-content: space-between;
   gap: 20px;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 16px 24px;
-}
-
-.nav-menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav-item {
-  margin: 0 10px;
-}
-
-.nav-link {
-  font-size: 15px;
-  font-weight: 500;
-  color: #344563;
-}
-
-.nav-link:hover {
-  color: #482ff7;
-}
-
-.nav-logo {
-  font-size: 18px;
-  font-weight: bold;
-  color: #6070ff;
-  display: flex;
-  align-items: center;
-  text-align: center;
-}
-
-@media only screen and (max-width: 768px) {
-  .nav-menu {
-    display: none;
-  }
-
-  .nav-menu.active {
-    left: 0;
-  }
-
-  .nav-item {
-    margin: 40px 0;
-  }
-
-  .mobile-menu {
-    display: block;
-    cursor: pointer;
-  }
 }
