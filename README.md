@@ -1,59 +1,48 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Portfolio
 
-> One paragraph statement about the project.
+> This is a responsive portfolio project whose is still a work in progress.
 
-![screenshot](./app_screenshot.png)
+![screenshot](./preview.png)
 
-Additional description about the project and its features.
+The style of this project is based on Template 1 from Microverse's Figma.com styles.
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML
+- CSS
+- node.js (for the linters)
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
-
+[Live Demo Link](https://lfmnovaes.github.io/portfolio/)
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
+If you want to make linters working locally, make sure to use the [NodeJS LTS](https://nodejs.org/en/download/)
 
 ### Setup
 
-### Install
+Run git clone on this project
+   ```
+   git clone https://github.com/lfmnovaes/portfolio.git
+   ```
+
+### Prerequisites
+
+Working only for mobile version (preferably 373x828) based on the provided background image
 
 ### Usage
-
-### Run tests
-
-### Deployment
-
-
+Open the website with any Browser (preferably with Google Chrome).
 
 ## Authors
 
-👤 **Author1**
+👤 **Luís Fernando**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@lfmnovaes](https://github.com/lfmnovaes)
+- Twitter: [@lfmnovaes](https://twitter.com/lfmnovaes)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/lfmnovaes/)
 
 ## 🤝 Contributing
 
@@ -67,9 +56,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+To Microverse and their support team.
 
 ## 📝 License
 
