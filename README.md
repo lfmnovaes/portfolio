@@ -20,20 +20,20 @@ The style of this project is based on Template 1 from Microverse's Figma.com sty
 
 ## Getting Started
 
-If you want to make linters working locally, make sure to use the [NodeJS LTS](https://nodejs.org/en/download/)
-
-### Setup
-
-Run git clone on this project
+- Run git clone on this project at the desired directory:
    ```
    git clone https://github.com/lfmnovaes/portfolio.git
    ```
+- Open the index.html on your favorite browser
+- Right click in the website and go to Inspect (Google Chrome) or Inspect Element (Firefox)
+- Switch to any mobile version with 360px width
 
 ### Prerequisites
 
-Working only for mobile version (preferably 373x828) based on the provided background image
+Working only for mobile version (best fit in 360x640)
 
 ### Usage
+
 Open the website with any Browser (preferably with Google Chrome).
 
 ## Authors

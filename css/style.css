@@ -23,9 +23,10 @@ a {
 }
 
 .main {
-  background: url(../img/header-shapes-mobile.svg) no-repeat fixed;
+  background: url(../img/header-shapes-mobile.svg) no-repeat;
   background-size: contain;
   background-position: 0, center;
+  border-bottom-left-radius: 50px;
   flex-direction: column;
   align-items: flex-start;
   padding: 114px 24px;
@@ -110,10 +111,12 @@ a {
 }
 
 .projects {
+  background: #e5e5e5;
   flex-direction: column;
 }
 
 .proj {
+  background: #fff;
   display: grid;
   grid-row-gap: 12px;
   justify-items: start;
@@ -165,6 +168,7 @@ a {
 }
 
 .about {
+  background: #fff;
   display: grid;
   grid-row-gap: 12px;
   justify-items: start;
