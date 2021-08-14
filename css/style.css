@@ -110,17 +110,18 @@ a {
 }
 
 .projects {
-  padding: 14px;
-  border: 1px solid #dfe1e6;
-  margin: 88px 10px;
-  border-radius: 16px;
-  top: 114px;
+  flex-direction: column;
 }
 
 .proj {
   display: grid;
   grid-row-gap: 12px;
   justify-items: start;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  padding: 14px;
+  margin: 88px 10px;
+  top: 114px;
 }
 
 .proj_lang {
@@ -161,4 +162,62 @@ a {
   font-size: 16px;
   font-weight: normal;
   line-height: 24px;
+}
+
+.about {
+  display: grid;
+  grid-row-gap: 12px;
+  justify-items: start;
+  border: 1px solid #dfe1e6;
+  border-top-right-radius: 50px;
+  padding: 14px;
+  margin: 88px 10px;
+  top: 114px;
+}
+
+.about_title {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
+  margin: 12px 0;
+}
+
+.about_desc {
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.about_ext {
+  margin: 88px 10px;
+}
+
+.about_item {
+  color: #000;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  justify-content: space-between;
+}
+
+.icon_pad {
+  padding: 10px;
+}
+
+.border {
+  border-bottom: 1px solid #dfe1e6;
+  margin: 10px 0;
+  padding-bottom: 10px;
+}
+
+.lang_item {
+  justify-content: flex-start;
+  background: #f7f7f9;
+  border-radius: 8px;
+  margin: 12px 0;
+  padding-right: 140px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #253858;
 }
