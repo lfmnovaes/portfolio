@@ -140,6 +140,7 @@ a {
 
 .float {
   float: left;
+  margin-right: 0.5rem;
 }
 
 .proj_img {
