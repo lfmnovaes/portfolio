@@ -127,9 +127,19 @@ a {
   top: 114px;
 }
 
+/*
 .proj_lang {
   display: flex;
   gap: 8px;
+}
+*/
+
+.proj_lang {
+  float: left;
+}
+
+.float {
+  float: left;
 }
 
 .proj_img {
