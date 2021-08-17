@@ -225,3 +225,26 @@ a {
   line-height: 20px;
   color: #253858;
 }
+
+.contact {
+  background: #6070ff;
+  flex-direction: column;
+  padding: 24px;
+}
+
+.white {
+  color: #fff;
+}
+
+.contact-title {
+  font-size: 40px;
+  line-height: 52px;
+  font-weight: bold;
+  margin-top: 100px;
+  margin-bottom: 10px;
+}
+
+.contact-desc {
+  font-size: 20px;
+  line-height: 28px;
+}
