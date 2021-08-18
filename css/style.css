@@ -31,7 +31,7 @@ a {
 }
 
 .main {
-  background: #fff url(../img/header-shapes-mobile.svg) no-repeat;
+  background: #fff url(../img/bg-header-mobile.svg) no-repeat;
   background-size: contain;
   background-position: 0, center;
   border-bottom-left-radius: 50px;
@@ -52,7 +52,22 @@ a {
   text-align: center;
 }
 
+.nav-item {
+  margin: 0 10px;
+}
+
+.nav-link {
+  font-size: 15px;
+  font-weight: 500;
+  color: #344563;
+}
+
+.nav-link:hover {
+  color: #482ff7;
+}
+
 .hamburger {
+  display: none;
   content: url(../img/icon-menu.png);
 }
 
@@ -237,7 +252,7 @@ a {
 }
 
 .contact {
-  background: #6070ff url(../img/footer.svg) 70% no-repeat;
+  background: #6070ff url(../img/bg-footer-mobile.svg) 70% no-repeat;
   box-shadow: 0 -100px 0 #fff;
   flex-direction: column;
   padding: 24px;
@@ -284,4 +299,23 @@ a {
 
 .contact .button {
   margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-menu {
+    display: none;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-item {
+    margin: 40px 0;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
 }
