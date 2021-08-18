@@ -31,13 +31,12 @@ a {
 }
 
 .main {
-  background: #fff url(../img/bg-header-mobile.svg) no-repeat;
+  background: #fff url(../img/bg-header-desktop.svg) no-repeat;
   background-size: contain;
-  background-position: 0, center;
-  border-bottom-left-radius: 50px;
+  border-bottom-left-radius: 100px;
   flex-direction: column;
   align-items: flex-start;
-  padding: 114px 24px;
+  padding: 300px 260px;
 }
 
 .navbar {
@@ -59,7 +58,6 @@ a {
 .nav-link {
   font-size: 15px;
   font-weight: 500;
-  color: #344563;
 }
 
 .nav-link:hover {
@@ -114,14 +112,15 @@ a {
 
 .intro {
   font-weight: bold;
-  font-size: 40px;
-  line-height: 52px;
-  color: #172b4d;
+  font-size: 48px;
+  line-height: 60px;
+  color: #091e42;
 }
 
 .description {
-  font-weight: normal;
-  font-size: 16px;
+  line-height: 28px;
+  font-size: 20px;
+  padding: 12px 100px 12px 0px;
 }
 
 .social {
@@ -143,6 +142,9 @@ a {
 .proj {
   background: #fff;
   display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-template-areas: "left right";
   grid-row-gap: 12px;
   justify-items: start;
   border: 1px solid #dfe1e6;
@@ -299,23 +301,4 @@ a {
 
 .contact .button {
   margin-bottom: 2rem;
-}
-
-@media only screen and (max-width: 768px) {
-  .nav-menu {
-    display: none;
-  }
-
-  .nav-menu.active {
-    left: 0;
-  }
-
-  .nav-item {
-    margin: 40px 0;
-  }
-
-  .hamburger {
-    display: block;
-    cursor: pointer;
-  }
 }

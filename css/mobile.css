@@ -1,0 +1,54 @@
+.nav-menu {
+  display: none;
+}
+
+.nav-menu.active {
+  left: 0;
+}
+
+.nav-item {
+  margin: 40px 0;
+}
+
+.hamburger {
+  display: block;
+  cursor: pointer;
+}
+
+.main {
+  background: #fff url(../img/bg-header-mobile.svg) no-repeat;
+  background-position: 0, center;
+  border-bottom-left-radius: 50px;
+  padding: 114px 24px;
+}
+
+.intro {
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
+}
+
+.description {
+  font-size: 16px;
+  padding: 12px 0;
+}
+
+.proj {
+  grid-template-areas: none;
+}
+
+.proj1 {
+  content: url(../img/snapshot1.png);
+}
+
+.proj2 {
+  content: url(../img/snapshot2.png);
+}
+
+.proj3 {
+  content: url(../img/snapshot3.png);
+}
+
+.proj4 {
+  content: url(../img/snapshot4.png);
+}
