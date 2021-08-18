@@ -46,6 +46,12 @@ Open the website with any Browser (preferably with Google Chrome).
 
 ## 🤝 Contributing
 
+👤 **Chukwuebuka Victor Ozoede**
+
+- GitHub: [@chukwuebukaVictor](https://github.com/chukwuebukaVictor)
+- Twitter: [@OzoedeVictor](https://twitter.com/OzoedeVictor)
+- LinkedIn: [LinkedIn](www.linkedin.com/in/chukwuebuka-ozoede-46616a219)
+
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
