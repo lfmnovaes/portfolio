@@ -120,7 +120,7 @@ a {
 .description {
   line-height: 28px;
   font-size: 20px;
-  padding: 12px 100px 12px 0px;
+  padding: 12px 100px 12px 0;
 }
 
 .social {
@@ -149,14 +149,28 @@ a {
   justify-items: start;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
-  padding: 14px;
+  padding: 24px;
   margin: 88px 10px;
   top: 114px;
+}
+
+.left {
+  grid-area: left;
+}
+
+.right {
+  grid-area: right;
+}
+
+.space {
+  padding: 22px 46px;
+  margin: 12px 0;
 }
 
 .proj_lang {
   display: flex;
   gap: 8px;
+  padding: 0 0 40px 0;
 }
 
 .proj_img {
@@ -166,9 +180,9 @@ a {
 
 .proj_title {
   font-weight: bold;
-  font-size: 32px;
-  line-height: 44px;
-  color: #172b4d;
+  font-size: 40px;
+  line-height: 52px;
+  color: #091e42;
 }
 
 .proj_subt {
@@ -176,22 +190,31 @@ a {
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
-  margin: 12px 0;
-  gap: 10px;
+  margin: 20px 0;
+  gap: 12px;
 }
 
 .black {
   color: #344563;
 }
 
+.proj_ssubt1 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+}
+
 .proj_ssubt2 {
-  color: #7a869a;
+  font-size: 18px;
+  line-height: 24px;
+  color: #6b778c;
 }
 
 .proj_desc {
   font-size: 16px;
   font-weight: normal;
   line-height: 24px;
+  margin: 24px 0;
 }
 
 .about {

@@ -35,6 +35,7 @@
 
 .proj {
   grid-template-areas: none;
+  padding: 14px;
 }
 
 .proj1 {
@@ -51,4 +52,36 @@
 
 .proj4 {
   content: url(../img/snapshot4.png);
+}
+
+.proj_title {
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+}
+
+.proj_subt {
+  margin: 12px 0;
+  gap: 10px;
+}
+
+.proj_ssubt1 {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.proj_ssubt2 {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #7a869a;
+}
+
+.proj_desc {
+  margin: 0;
+}
+
+.proj_lang {
+  padding: 0;
 }
