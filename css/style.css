@@ -83,6 +83,9 @@ a {
   color: #6070ff;
   text-align: center;
   padding: 0 7%;
+  animation-name: logo;
+  animation-duration: 3s;
+  transform: rotateZ(0deg);
 }
 
 .navbar ul {
@@ -121,6 +124,7 @@ a {
   color: #396df2;
   margin-top: 10px;
   margin-bottom: 10px;
+  transition: background-color 2s;
 }
 
 .button:hover {
@@ -151,6 +155,10 @@ a {
   font-size: 48px;
   line-height: 60px;
   color: #091e42;
+  position: relative;
+  animation-name: intro;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
 }
 
 .description {
@@ -165,6 +173,10 @@ a {
 .social-icons {
   padding: 10px 0;
   gap: 20px;
+  position: relative;
+  animation-name: icons;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
 }
 
 .projects {
@@ -223,6 +235,9 @@ a {
   border-radius: 8px;
   max-width: 100%;
   height: auto;
+  opacity: 0.6;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .proj-title {
@@ -534,38 +549,22 @@ a {
   }
 }
 
-/* Animations */
-.navbar > a{
-  animation-name: logo;
-  animation-duration: 3s;
-  transform: rotateZ(0deg);
+@keyframes logo {
+  100% { transform: rotateZ(360deg); }
 }
 
-@keyframes logo{
-  100%{transform: rotateZ(360deg)}
+@keyframes intro {
+  0% { top: -100px; }
+  100% { top: 10px; }
 }
 
-.intro{
-  position: relative;
-  animation-name: intro;
-  animation-duration: 3s;
-  animation-fill-mode: forwards;
+@keyframes icons {
+  0% { left: -50px; }
+  25% { left: 100px; }
+  50% { left: -50px; }
+  100% { left: 0; }
 }
 
-@keyframes intro{
-  0%{ top: -100px}
-  100%{ top: 10px}
-}
-
-.social-icons{
-  position: relative;
-  animation-name: icons;
-  animation-duration: 5s;
-  animation-fill-mode: forwards;
-}
-@keyframes icons{
-  0%{left: -50px}
-  25%{left: 100px}
-  50%{left:-50px}
-  100%{left: 0}
+.proj-img:hover {
+  opacity: 1;
 }
