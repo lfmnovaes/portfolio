@@ -26,11 +26,11 @@ The style of this project is based on Template 1 from Microverse's Figma.com sty
    ```
 - Open the index.html on your favorite browser
 - Right click in the website and go to Inspect (Google Chrome) or Inspect Element (Firefox)
-- Switch to any mobile version with 360px width
+- Best fit in 1440p desktop version or any mobile version with 360p width
 
 ### Prerequisites
 
-Working only for mobile version (best fit in 360x640)
+Works on 1440p (desktop) or 360p (mobile)
 
 ### Usage
 
