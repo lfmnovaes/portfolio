@@ -183,7 +183,7 @@ a {
   border: 1px solid #dfe1e6;
   border-radius: 24px;
   padding: 24px;
-  margin: 140px 100px 0 100px;
+  margin: 10% 7% 0 7%;
   top: 114px;
 }
 
@@ -208,6 +208,9 @@ a {
 }
 
 .proj-lang li {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
   color: #6070ff;
   background-color: #ebebff;
   border-radius: 8px;
@@ -218,6 +221,8 @@ a {
 .proj-img {
   margin: auto;
   border-radius: 8px;
+  max-width: 100%;
+  height: auto;
 }
 
 .proj-title {
@@ -407,7 +412,17 @@ a {
     flex-direction: column;
     padding: 14px;
     border-radius: 16px;
-    margin: 88px 10px;
+    margin: 10% 7% 0 7%;
+  }
+
+  .gray {
+    color: #7a869a;
+  }
+
+  .font18-24 {
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 600;
   }
 
   .proj1 {
