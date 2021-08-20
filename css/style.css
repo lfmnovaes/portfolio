@@ -67,10 +67,10 @@ a {
   background: #fff url(../img/bg-header-desktop.svg) no-repeat;
   background-size: contain;
   background-position: 0, center;
-  border-bottom-left-radius: 100px;
+  border-bottom-left-radius: 150px;
   flex-direction: column;
   align-items: flex-start;
-  padding: 300px 260px;
+  padding: 20% 15%;
 }
 
 .navbar {
@@ -78,16 +78,16 @@ a {
   padding: 16px 24px;
 }
 
-.nav-logo {
+.navbar > a {
   font-size: 18px;
   color: #6070ff;
   text-align: center;
-  padding: 0 100px;
+  padding: 0 7%;
 }
 
-.nav-menu {
+.navbar ul {
   gap: 10px;
-  padding: 0 100px 0 0;
+  padding: 0 7% 0 0;
 }
 
 .nav-item {
@@ -207,6 +207,14 @@ a {
   padding: 0 0 30px 0;
 }
 
+.proj-lang li {
+  color: #6070ff;
+  background-color: #ebebff;
+  border-radius: 8px;
+  padding: 4px 12px;
+  margin: 0 16px 0 0;
+}
+
 .proj-img {
   margin: auto;
   border-radius: 8px;
@@ -242,7 +250,7 @@ a {
   background: #fff;
   justify-items: start;
   border: 0 solid #dfe1e6;
-  border-top-right-radius: 100px;
+  border-top-right-radius: 150px;
   margin: 140px 0 0 0;
   padding: 140px 0;
 }
@@ -250,10 +258,6 @@ a {
 .about-title {
   color: #172b4d;
   margin: 12px 0;
-}
-
-.about-desc {
-  font-weight: normal;
 }
 
 .about-ext {
@@ -305,11 +309,11 @@ a {
 }
 
 .contact {
-  background: #6070ff url(../img/bg-footer-desktop.svg) 40% 100px no-repeat;
-  box-shadow: 0 -100px 0 #fff;
+  background: #6070ff url(../img/bg-footer-desktop.svg) 40% 70% no-repeat;
+  box-shadow: 0 -150px 0 #fff;
   flex-direction: column;
-  padding: 24px 24px 120px 24px;
-  border-top-left-radius: 100px;
+  padding: 2% 2% 10% 2%;
+  border-top-left-radius: 150px;
 }
 
 .white {
@@ -353,4 +357,173 @@ a {
 
 .contact .button {
   margin-bottom: 2rem;
+}
+
+/* Mobile section */
+
+@media screen and (max-width: 768px) {
+  .navbar > a {
+    padding: 0;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+
+  .navbar ul:active {
+    left: 0;
+  }
+
+  .nav-item {
+    margin: 40px 0;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .main {
+    background: #fff url(../img/bg-header-mobile.svg) no-repeat;
+    border-bottom-left-radius: 100px;
+    background-position: 50% 30%;
+    padding: 114px 24px;
+  }
+
+  .intro {
+    font-size: 40px;
+    line-height: 52px;
+    color: #172b4d;
+  }
+
+  .description {
+    font-size: 16px;
+    padding: 12px 0;
+  }
+
+  .proj {
+    grid-template-areas: none;
+    display: flex;
+    flex-direction: column;
+    padding: 14px;
+    border-radius: 16px;
+    margin: 88px 10px;
+  }
+
+  .proj1 {
+    content: url(../img/snapshot1.png);
+  }
+
+  .proj2 {
+    content: url(../img/snapshot2.png);
+  }
+
+  .proj3 {
+    content: url(../img/snapshot3.png);
+  }
+
+  .proj4 {
+    content: url(../img/snapshot4.png);
+  }
+
+  .proj-title {
+    font-size: 32px;
+    line-height: 44px;
+    color: #172b4d;
+  }
+
+  .proj-subt {
+    margin: 12px 0;
+    gap: 10px;
+  }
+
+  .proj-ssubt1 {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  .proj-ssubt2 {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    color: #7a869a;
+  }
+
+  .proj-desc {
+    margin: 0;
+  }
+
+  .proj-lang {
+    padding: 12px 0;
+  }
+
+  .space {
+    padding: 0;
+    margin: 0;
+  }
+
+  .about {
+    display: flex;
+    grid-template-areas: none;
+    flex-direction: column;
+    border-top-right-radius: 50px;
+    margin: 40px 0 0 0;
+    padding: 24px;
+  }
+
+  .about-ext {
+    flex: 0;
+  }
+
+  .flex1 {
+    flex: 0;
+    padding: 0;
+  }
+
+  .about-items {
+    padding: 0;
+  }
+
+  .lang-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 140px;
+    margin: 12px 0;
+    width: auto;
+    height: auto;
+  }
+
+  .social {
+    padding: 5px 0;
+  }
+
+  .social-icons {
+    justify-content: flex-start;
+  }
+
+  .contact {
+    background: #6070ff url(../img/bg-footer-mobile.svg) 70% no-repeat;
+    flex-direction: column;
+    border-top-left-radius: 100px;
+    padding: 24px;
+    background-position-x: 100%;
+  }
+
+  .contact p {
+    padding: 0;
+  }
+
+  .form {
+    padding: 0;
+    align-items: flex-start;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .main {
+    background-size: auto;
+  }
 }
