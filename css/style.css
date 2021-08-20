@@ -30,6 +30,39 @@ a {
   align-items: center;
 }
 
+.bold {
+  font-weight: bold;
+}
+
+.font15-20 {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.font16-24 {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.font18-24 {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.font20-28 {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.font40-52 {
+  font-size: 40px;
+  line-height: 52px;
+}
+
+.font500 {
+  font-weight: 500;
+}
+
 .main {
   background: #fff url(../img/bg-header-desktop.svg) no-repeat;
   background-size: contain;
@@ -47,7 +80,6 @@ a {
 
 .nav-logo {
   font-size: 18px;
-  font-weight: bold;
   color: #6070ff;
   text-align: center;
   padding: 0 100px;
@@ -64,8 +96,6 @@ a {
 
 .nav-link {
   font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
 }
 
 .nav-link:hover {
@@ -85,7 +115,6 @@ a {
   box-sizing: border-box;
   border-radius: 8px;
   font-family: inherit;
-  font-weight: 500;
   font-size: 17px;
   line-height: 24px;
   letter-spacing: 0.03em;
@@ -119,22 +148,16 @@ a {
 }
 
 .intro {
-  font-weight: bold;
   font-size: 48px;
   line-height: 60px;
   color: #091e42;
 }
 
 .description {
-  line-height: 28px;
-  font-size: 20px;
   padding: 12px 100px 12px 0;
 }
 
 .social {
-  line-height: 24px;
-  font-size: 16px;
-  font-weight: 500;
   color: #7f8cff;
   padding: 20px 0;
 }
@@ -190,9 +213,6 @@ a {
 }
 
 .proj-title {
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 52px;
   color: #091e42;
 }
 
@@ -209,22 +229,12 @@ a {
   color: #344563;
 }
 
-.proj-ssubt1 {
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 24px;
-}
-
-.proj-ssubt2 {
-  font-size: 18px;
-  line-height: 24px;
+.gray {
   color: #6b778c;
 }
 
 .proj-desc {
-  font-size: 16px;
   font-weight: normal;
-  line-height: 24px;
   margin: 24px 0;
 }
 
@@ -238,17 +248,12 @@ a {
 }
 
 .about-title {
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 52px;
   color: #172b4d;
   margin: 12px 0;
 }
 
 .about-desc {
   font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
 }
 
 .about-ext {
@@ -263,7 +268,6 @@ a {
 
 .about-item {
   color: #000;
-  font-weight: 500;
   font-size: 20px;
   line-height: 24px;
   justify-content: space-between;
@@ -275,11 +279,7 @@ a {
   padding: 0 0 0 100px;
 }
 
-.pad-icon {
-  padding: 10px;
-}
-
-.pad-text {
+.pad10 {
   padding: 10px;
 }
 
@@ -297,7 +297,6 @@ a {
   background: #f7f7f9;
   border-radius: 8px;
   margin: 12px 12px 12px 0;
-  font-weight: 500;
   font-size: 15px;
   line-height: 20px;
   color: #253858;
@@ -318,16 +317,11 @@ a {
 }
 
 .contact h2 {
-  font-size: 40px;
-  line-height: 52px;
-  font-weight: bold;
   margin-top: 100px;
   margin-bottom: 10px;
 }
 
 .contact p {
-  font-size: 20px;
-  line-height: 28px;
   margin-bottom: 40px;
   text-align: center;
   padding: 10px 30%;
