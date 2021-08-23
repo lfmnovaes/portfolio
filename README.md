@@ -24,17 +24,18 @@ The style of this project is based on Template 1 from Microverse's Figma.com sty
    ```
    git clone https://github.com/lfmnovaes/portfolio.git
    ```
-- Open the index.html on your favorite browser
-- Right click in the website and go to Inspect (Google Chrome) or Inspect Element (Firefox)
-- Best fit in 1440p desktop version or any mobile version with 360p width
+- Open the index.html in your favorite browser
+- Right-click on the website and go to Inspect (Google Chrome) or Inspect Element (Firefox)
+- Best fit on 1024p screen or higher or any mobile version with 375p/360p screen
 
 ### Prerequisites
 
-Works on 1440p (desktop) or 360p (mobile)
+An updated web browser
 
 ### Usage
 
-Open the website with any Browser (preferably with Google Chrome).
+- Open the website with any Browser (preferably with Google Chrome)
+- Scroll down to see different sections of the page
 
 ## Authors
 
