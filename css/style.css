@@ -89,7 +89,11 @@ a {
 }
 
 .navbar > a:hover {
-  color: #344563;
+  color: darkblue;
+}
+
+.navbar > a:focus {
+  border: 1px solid black;
 }
 
 .navbar ul {
@@ -132,7 +136,7 @@ a {
 }
 
 .button:hover {
-  background: #482ff7;
+  background: darkblue;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   color: #fff;
   border-color: #fff;
@@ -140,6 +144,10 @@ a {
 
 .button:active {
   background: blue;
+}
+
+.button:focus {
+  border: 1px solid black;
 }
 
 .button:disabled {
