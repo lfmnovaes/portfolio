@@ -391,14 +391,72 @@ a {
   margin-bottom: 32px;
 }
 
+.menu{
+  display: none;
+}
+.ham{
+  display: none;
+}
+
 /* Mobile section */
 
 @media screen and (max-width: 768px) {
   .navbar > a {
     padding: 0;
   }
+  .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background: black;
+    color: white;
+    transform: translateY(-100%);
+    transition: transform 0.2s;
+    list-style: none;
+    padding-top: 4rem;
+  z-index: 1000;
+  }
+  .menuLink {
+    display: inline;
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .menuLink:hover {
+    text-decoration: underline;
+  }
+  .icon-x {
+    display: none;
+    content: url(../img/Icon-x.png);
+  }
+  .showMenu {
+    transform: translateY(0);
+  }
+  .ham {
+    position: fixed;
+    /* keep the hamburger button above everything */
+    z-index: 100;
+    top: 1rem;
+    right: 1rem;
+    width: 3rem;
+    height: 3rem;
+    border: 0;
+    background: white;
+    cursor: pointer;
+    display: block;
+    z-index: 1000;
+  }
+  
+  
+  .menu {
+    display: block;
+  }
 
-  .navbar ul {
+  .desktop-menu {
     display: none;
   }
 
@@ -413,7 +471,7 @@ a {
   .hamburger {
     display: block;
     cursor: pointer;
-  }
+  } 
 
   .main {
     background: #fff url(../img/bg-header-mobile.svg) no-repeat;
