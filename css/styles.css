@@ -420,17 +420,41 @@ a {
 }
 
 .modal-content {
+  display:flex;
+  justify-content: space-evenly;
   background-color: #fefefe;
   margin: 3% auto;
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
-  height: 80%;
+  height: auto;
+  
+
+}
+
+
+.text{
+  display: flex;
+  flex-direction: column;
+}
+.modal-content img{
+  width: 50%;
+  justify-content: center;
+}
+.toggle-text{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.toggle-text p{
+  width: 50%;
 }
 
 /* Mobile section */
 
 @media screen and (max-width: 768px) {
+  
   .navbar > a {
     padding: 0;
   }
