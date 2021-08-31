@@ -8,7 +8,7 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
       rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async
       src="https://www.googletagmanager.com/gtag/js?id=G-NEXJF3MWF2"></script>
@@ -23,22 +23,34 @@
     <header class="header">
       <nav class="navbar d-flex">
         <a href="#" class="bold">Luis</a>
-        <ul class="d-flex">
+        <ul class="d-flex desktop-menu">
           <li class="nav-item">
             <a href="#" class="nav-link font15-20 black">Portfolio</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link font15-20 black">About</a>
+            <a href="#about" class="nav-link font15-20 black">About</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link font15-20 black">Contact</a>
+            <a href="#contact" class="nav-link font15-20 black">Contact</a>
           </li>
         </ul>
-        <div class="hamburger"></div>
+        <ul class="menu blue">
+          <li><a class="menuLink" href="#">Portfolio</a></li>
+          <li><a class="menuLink" href="#about">About</a></li>
+          <li><a class="menuLink" href="#contact">Contact</a></li>
+        </ul>
+        <button class="ham" type="button">
+          <span class="menuIcon">
+            menu
+          </span>
+          <span class="xIcon blue">
+            close
+          </span>
+        </button>
       </nav>
     </header>
     <section class="main d-flex">
-      <h1 class="intro bold">
+      <h1 id="about" class="intro bold">
         I'm Luis<br>Glad to see you!
       </h1>
       <p class="description black font20-28">
@@ -217,7 +229,7 @@
       </div>
     </section>
     <footer class="contact d-flex">
-      <h2 class="white bold font40-52">Contact me</h2>
+      <h2 id="contact" class="white bold font40-52">Contact me</h2>
       <p class="white font20-28 bold">If you have an application you are
         interested in developing, a feature that you need built or a project
         that needs coding. I’d love to help with it</p>
@@ -230,8 +242,9 @@
         <textarea class="usr_comment smooth_border" name="usr-message" required
           aria-label="Write your message" maxlength="500"
           placeholder="Write your message here"></textarea>
-        <button class="button 500" type="submit">Get It Touch</button>
+        <button class="button 500" type="submit">Get In Touch</button>
       </form>
     </footer>
+    <script src="js/scripts.js"></script>
   </body>
 </html>
