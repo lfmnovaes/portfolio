@@ -1,26 +1,32 @@
-var menu = document.querySelector(".menu")
-var ham = document.querySelector(".ham")
-var xIcon = document.querySelector(".icon-x")
-var menuIcon = document.querySelector(".menuIcon")
-
-ham.addEventListener("click", toggleMenu)
+const menu = document.querySelector('.menu');
+const ham = document.querySelector('.ham');
+const xIcon = document.querySelector('.xIcon');
+const menuIcon = document.querySelector('.menuIcon');
+const main = document.querySelector('.main');
+const header = document.querySelector('.bold');
 
 function toggleMenu() {
-  if (menu.classList.contains("showMenu")) {
-    menu.classList.remove("showMenu");
-    xIcon.style.display = "none";
-    menuIcon.style.display = "block";
+  if (menu.classList.contains('showMenu')) {
+    menu.classList.remove('showMenu');
+    xIcon.style.display = 'none';
+    menuIcon.style.display = 'block';
+    main.style.filter = 'blur(0px)';
+    header.style.filter = 'blur(0px)';
   } else {
-    menu.classList.add("showMenu");
-    xIcon.style.display = "block";
-    menuIcon.style.display = "none";
+    menu.classList.add('showMenu');
+    xIcon.style.display = 'block';
+    menuIcon.style.display = 'none';
+    main.style.filter = 'blur(4px)';
+    header.style.filter = 'blur(4px)';
   }
 }
 
-var menuLinks = document.querySelectorAll(".menuLink")
+ham.addEventListener('click', toggleMenu);
+
+const menuLinks = document.querySelectorAll('.menuLink');
 
 menuLinks.forEach(
-  function (menuLink) {
-    menuLink.addEventListener("click", toggleMenu)
-  }
-)
+  (menuLink) => {
+    menuLink.addEventListener('click', toggleMenu);
+  },
+);
