@@ -428,10 +428,7 @@ a {
   height: auto;
 }
 
-.xp1,
-.xp2,
-.xp3,
-.xp4 {
+.xp {
   cursor: pointer;
   font-size: 30px;
   color: #67798e;

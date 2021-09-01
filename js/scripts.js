@@ -51,99 +51,151 @@ menuLinks.forEach(
   },
 );
 
-const modal1 = document.getElementById('myModal1');
-const modal2 = document.getElementById('myModal2');
-const modal3 = document.getElementById('myModal3');
-const modal4 = document.getElementById('myModal4');
-const btn1 = document.getElementById('btn1');
-const btn2 = document.getElementById('btn2');
-const btn3 = document.getElementById('btn3');
-const btn4 = document.getElementById('btn4');
-const xp1 = document.getElementsByClassName('xp1')[0];
-const xp2 = document.getElementsByClassName('xp2')[0];
-const xp3 = document.getElementsByClassName('xp3')[0];
-const xp4 = document.getElementsByClassName('xp4')[0];
+const modalObj = {
+  modal1: {
+    title: 'Tonic',
+    subt: ['CANOPY', 'Back End Dev', '2015'],
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    img: 'img/snapshot1-details.png',
+    tech: ['html', 'css', 'javaScript'],
+    live: 'https://lfmnovaes.github.io/portfolio/',
+    source: 'https://github.com/lfmnovaes/portfolio',
+  },
+  modal2: {
+    title: 'Multi-Post Stories',
+    subt: ['CANOPY', 'Back End Dev', '2015'],
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    img: 'img/snapshot1-details.png',
+    tech: ['html', 'css', 'javaScript'],
+    live: 'https://lfmnovaes.github.io/portfolio/',
+    source: 'https://github.com/lfmnovaes/portfolio',
+  },
+  modal3: {
+    title: 'Tonic',
+    subt: ['CANOPY', 'Back End Dev', '2015'],
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    img: 'img/snapshot1-details.png',
+    tech: ['html', 'css', 'javaScript'],
+    live: 'https://lfmnovaes.github.io/portfolio/',
+    source: 'https://github.com/lfmnovaes/portfolio',
+  },
+  modal4: {
+    title: 'Multi-Post Stories',
+    subt: ['CANOPY', 'Back End Dev', '2015'],
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    img: 'img/snapshot1-details.png',
+    tech: ['html', 'css', 'javaScript'],
+    live: 'https://lfmnovaes.github.io/portfolio/',
+    source: 'https://github.com/lfmnovaes/portfolio',
+  },
+};
 
-btn1.onclick = function seeP1() {
-  modal1.style.display = 'block';
+const modalTitle = document.getElementById('modalTitle');
+const modalSubt = document.getElementById('modalSubt');
+const modalDesc = document.getElementById('modalDesc');
+const modalTech = document.getElementById('modalTech');
+const modalImg = document.getElementById('modalImg');
+const modalBtn1 = document.getElementById('modalBtn1');
+const modalBtn2 = document.getElementById('modalBtn2');
+
+function addCounter() {
+  const counter = document.createElement('img');
+  counter.src = 'icon/counter.png';
+  counter.alt = 'counter';
+  modalSubt.appendChild(counter);
+}
+
+function addSubt(modal) {
+  const firstDiv = document.createElement('div');
+  firstDiv.className = 'font500 black font18-24';
+  modalSubt.appendChild(firstDiv);
+  firstDiv.innerHTML = modalObj[modal].subt[0];
+  for (const i of modalObj[modal].subt.slice(1)) {
+    addCounter();
+    const otherDiv = document.createElement('div');
+    otherDiv.className = 'gray font18-24';
+    modalSubt.appendChild(otherDiv);
+    otherDiv.innerHTML = i;
+  }
+}
+
+function addTechs(modal) {
+  for (const i of modalObj[modal].tech) {
+    const li = document.createElement('li');
+    li.appendChild(document.createTextNode(i));
+    modalTech.appendChild(li);
+  }
+}
+
+function clearModal() {
+  modalTech.innerHTML = '';
+  modalSubt.innerHTML = '';
+}
+
+function popModal(modal) {
+  modalTitle.textContent = modalObj[modal].title;
+  addSubt(modal);
+  modalDesc.textContent = modalObj[modal].desc;
+  addTechs(modal);
+  modalImg.src = modalObj[modal].img;
+  modalBtn1.setAttribute('onClick', `location.href='${modalObj[modal].live}';`);
+  modalBtn2.setAttribute('onClick', `location.href='${modalObj[modal].source}';`);
+}
+
+const modal = document.getElementById('myModal');
+const mBtn1 = document.getElementById('mBtn1');
+const mBtn2 = document.getElementById('mBtn2');
+const mBtn3 = document.getElementById('mBtn3');
+const mBtn4 = document.getElementById('mBtn4');
+const xp = document.getElementsByClassName('xp')[0];
+
+mBtn1.onclick = function seeP1() {
+  popModal('modal1');
+  modal.style.display = 'block';
   main.style.filter = 'blur(4px)';
   header.style.filter = 'blur(4px)';
   projOn();
 };
 
-btn2.onclick = function seeP2() {
-  modal2.style.display = 'block';
+mBtn2.onclick = function seeP2() {
+  popModal('modal2');
+  modal.style.display = 'block';
   main.style.filter = 'blur(4px)';
   header.style.filter = 'blur(4px)';
   projOn();
 };
 
-btn3.onclick = function seeP3() {
-  modal3.style.display = 'block';
+mBtn3.onclick = function seeP3() {
+  popModal('modal3');
+  modal.style.display = 'block';
   main.style.filter = 'blur(4px)';
   header.style.filter = 'blur(4px)';
   projOn();
 };
 
-btn4.onclick = function seeP4() {
-  modal4.style.display = 'block';
+mBtn4.onclick = function seeP4() {
+  popModal('modal4');
+  modal.style.display = 'block';
   main.style.filter = 'blur(4px)';
   header.style.filter = 'blur(4px)';
   projOn();
 };
 
-function closeP1() {
-  modal1.style.display = 'none';
+function closeModal() {
+  modal.style.display = 'none';
   main.style.filter = 'blur(0px)';
   header.style.filter = 'blur(0px)';
   projOff();
 }
 
-function closeP2() {
-  modal2.style.display = 'none';
-  main.style.filter = 'blur(0px)';
-  header.style.filter = 'blur(0px)';
-  projOff();
-}
-
-function closeP3() {
-  modal3.style.display = 'none';
-  main.style.filter = 'blur(0px)';
-  header.style.filter = 'blur(0px)';
-  projOff();
-}
-
-function closeP4() {
-  modal4.style.display = 'none';
-  main.style.filter = 'blur(0px)';
-  header.style.filter = 'blur(0px)';
-  projOff();
-}
-
-xp1.onclick = function x1() {
-  closeP1();
-};
-
-xp2.onclick = function x2() {
-  closeP2();
-};
-
-xp3.onclick = function x3() {
-  closeP3();
-};
-
-xp4.onclick = function x4() {
-  closeP4();
+xp.onclick = function x() {
+  closeModal();
+  clearModal();
 };
 
 window.onclick = function clickOut(event) {
-  if (event.target === modal1) {
-    closeP1();
-  } else if (event.target === modal2) {
-    closeP2();
-  } else if (event.target === modal3) {
-    closeP3();
-  } else if (event.target === modal4) {
-    closeP4();
+  if (event.target === modal) {
+    closeModal();
+    clearModal();
   }
 };
