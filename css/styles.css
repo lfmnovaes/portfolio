@@ -234,7 +234,7 @@ a {
   background-color: #ebebff;
   border-radius: 8px;
   padding: 4px 12px;
-  margin: 0 16px 0 0;
+  margin: 0;
 }
 
 .proj-img {
@@ -428,7 +428,10 @@ a {
   height: auto;
 }
 
-.close {
+.xp1,
+.xp2,
+.xp3,
+.xp4 {
   cursor: pointer;
   font-size: 30px;
   color: #67798e;
