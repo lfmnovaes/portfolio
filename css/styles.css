@@ -463,22 +463,22 @@ a {
   margin: 50px 0 50px 0;
 }
 
-.modal-btn {
+.modal-footer {
   display: block;
 }
 
-.modal-btn button {
+.modal-footer button {
   border: 1px solid #6070ff;
   margin: 20px 10px 0 0;
   padding: 8px 16px;
 }
 
-.modal-btn ul {
+.modal-footer ul {
   margin: 0;
   padding: 8px 0 20px 0;
 }
 
-.modal-btn ul li {
+.modal-footer ul li {
   margin: 0;
 }
 
@@ -715,7 +715,7 @@ a {
     margin: 0;
   }
 
-  .modal-btn button {
+  .modal-footer button {
     font-size: 15px;
     line-height: 20px;
     margin: 20px 6px 0 0;
