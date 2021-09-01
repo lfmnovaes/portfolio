@@ -192,3 +192,12 @@ window.onclick = function clickOut(event) {
     clearModal();
   }
 };
+
+const usrEmail = document.getElementById('usremail');
+function haveUpper(str) { return /[A-Z]/.test(str); }
+
+
+const usrBtn = document.getElementById('usrbtn');
+usrBtn.onclick = function clickBtn (){
+  alert(haveUpper(usrEmail.innerText));
+}
