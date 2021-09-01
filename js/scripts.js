@@ -4,6 +4,23 @@ const xIcon = document.querySelector('.xIcon');
 const menuIcon = document.querySelector('.menuIcon');
 const main = document.querySelector('.main');
 const header = document.querySelector('.bold');
+const projs = document.querySelectorAll('.proj');
+
+function projOn() {
+  projs.forEach(
+    (proj) => {
+      proj.style.filter = 'blur(4px)';
+    },
+  );
+}
+
+function projOff() {
+  projs.forEach(
+    (proj) => {
+      proj.style.filter = 'blur(0px)';
+    },
+  );
+}
 
 function toggleMenu() {
   if (menu.classList.contains('showMenu')) {
@@ -12,12 +29,14 @@ function toggleMenu() {
     menuIcon.style.display = 'block';
     main.style.filter = 'blur(0px)';
     header.style.filter = 'blur(0px)';
+    projOff();
   } else {
     menu.classList.add('showMenu');
     xIcon.style.display = 'block';
     menuIcon.style.display = 'none';
     main.style.filter = 'blur(4px)';
     header.style.filter = 'blur(4px)';
+    projOn();
   }
 }
 
@@ -35,16 +54,26 @@ const modal = document.getElementById('myModal');
 const btn = document.getElementById('btn1');
 const span = document.getElementsByClassName('close')[0];
 
-btn.onclick = function () {
+btn.onclick = function seeP() {
   modal.style.display = 'block';
+  main.style.filter = 'blur(4px)';
+  header.style.filter = 'blur(4px)';
+  projOn();
 };
 
-span.onclick = function () {
+function closeP() {
   modal.style.display = 'none';
+  main.style.filter = 'blur(0px)';
+  header.style.filter = 'blur(0px)';
+  projOff();
+}
+
+span.onclick = function clickX() {
+  closeP();
 };
 
-window.onclick = function (event) {
+window.onclick = function clickOut(event) {
   if (event.target === modal) {
-    modal.style.display = 'none';
+    closeP();
   }
 };
