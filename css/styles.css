@@ -234,7 +234,7 @@ a {
   background-color: #ebebff;
   border-radius: 8px;
   padding: 4px 12px;
-  margin: 0 16px 0 0;
+  margin: 0;
 }
 
 .proj-img {
@@ -404,6 +404,89 @@ a {
 .blue {
   background-color: #6070ff;
   opacity: 0.9;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-container {
+  display: flex;
+  background-color: #fefefe;
+  margin: 3% auto;
+  padding: 20px;
+  border-radius: 16px;
+  width: 85%;
+  height: auto;
+}
+
+.xp {
+  cursor: pointer;
+  font-size: 30px;
+  color: #67798e;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.icon {
+  float: right;
+}
+
+.modal-img {
+  max-width: 100%;
+  align-self: center;
+}
+
+.modal-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-subt {
+  margin: 10px 0 30px 0;
+}
+
+.modal-text {
+  display: flex;
+  flex-direction: row;
+  margin: 50px 0 50px 0;
+}
+
+.modal-footer {
+  display: block;
+}
+
+.modal-footer button {
+  border: 1px solid #6070ff;
+  margin: 20px 10px 0 0;
+  padding: 8px 16px;
+}
+
+.modal-footer ul {
+  margin: 0;
+  padding: 8px 0 20px 0;
+}
+
+.modal-footer ul li {
+  margin: 0;
+}
+
+.modal-text p {
+  font-size: 16px;
+  line-height: 30px;
+  margin: 0 20px 0 0;
+  width: 65%;
 }
 
 /* Mobile section */
@@ -612,6 +695,31 @@ a {
     padding: 0;
     align-items: flex-start;
     width: 100%;
+  }
+
+  .modal-container {
+    padding: 16px;
+    width: 90%;
+  }
+
+  .modal-text {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0 0 0;
+  }
+
+  .modal-text p {
+    font-size: 14px;
+    line-height: 24px;
+    width: 100%;
+    margin: 0;
+  }
+
+  .modal-footer button {
+    font-size: 15px;
+    line-height: 20px;
+    margin: 20px 6px 0 0;
+    padding: 8px 14px;
   }
 }
 

@@ -22,7 +22,7 @@
   <body>
     <header class="header">
       <nav class="navbar d-flex">
-        <a href="#" class="bold">Luis</a>
+        <a id="logo" href="#" class="bold">Luis</a>
         <ul class="d-flex desktop-menu">
           <li class="nav-item">
             <a href="#" class="nav-link font15-20 black">Portfolio</a>
@@ -105,7 +105,29 @@
             <li>css</li>
             <li>javaScript</li>
           </ul>
-          <button type="button" class="button 500">See Project</button>
+          <button id="mBtn1" type="button" class="button 500">See Project</button>
+        </div>
+      </div>
+      <div id="myModal" class="modal">
+        <div class="modal-container">
+          <div class="modal-content">
+            <div class="modal-title">
+              <h1 id="modalTitle" class="proj-title bold font40-52">Title</h1>
+              <span class="xp">&times;</span>
+            </div>
+            <div id="modalSubt" class="proj-subt d-flex modal-subt">
+            </div>
+            <img id="modalImg" class="modal-img" src="img/snapshot1-details.png" alt="Tonic">
+            <div class="modal-text">
+              <p id="modalDesc" class="black"></p>
+              <div class="modal-footer">
+                <ul id="modalTech" class="proj-lang border">
+                </ul>
+                <button id="modalBtn1" type="button" class="button">See Live &nbsp; <img class="icon" src="/icon/liveIcon.svg" alt="Live"></button>
+                <button id="modalBtn2" type="button" class="button">See Source &nbsp; <img class="icon" src="/icon/sourceIcon.svg" alt="Source"></button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="proj">
@@ -127,7 +149,7 @@
             <li>css</li>
             <li>javaScript</li>
           </ul>
-          <button type="button" class="button 500">See Project</button>
+          <button id="mBtn2" type="button" class="button 500">See Project</button>
         </div>
       </div>
       <div class="proj">
@@ -149,7 +171,7 @@
             <li>css</li>
             <li>javaScript</li>
           </ul>
-          <button type="button" class="button 500">See Project</button>
+          <button id="mBtn3" type="button" class="button 500">See Project</button>
         </div>
       </div>
       <div class="proj">
@@ -166,12 +188,12 @@
           </div>
           <p class="proj-desc black font16-24">A daily selection of privately
             personalized reads; no accounts or sign-ups required.</p>
-          <ul class="proj-lang" >
+          <ul class="proj-lang">
             <li>html</li>
             <li>css</li>
             <li>javaScript</li>
           </ul>
-          <button type="button" class="button 500">See Project</button>
+          <button id="mBtn4" type="button" class="button 500">See Project</button>
         </div>
       </div>
     </section>
