@@ -109,22 +109,22 @@ function addSubt(modal) {
   const firstDiv = document.createElement('div');
   firstDiv.className = 'font500 black font18-24';
   modalSubt.appendChild(firstDiv);
-  firstDiv.innerHTML = modalObj[modal].subt[0];
-  for (const i of modalObj[modal].subt.slice(1)) {
+  [firstDiv.innerHTML] = modalObj[modal].subt;
+  modalObj[modal].subt.slice(1).forEach((i) => {
     addCounter();
     const otherDiv = document.createElement('div');
     otherDiv.className = 'gray font18-24';
     modalSubt.appendChild(otherDiv);
     otherDiv.innerHTML = i;
-  }
+  });
 }
 
 function addTechs(modal) {
-  for (const i of modalObj[modal].tech) {
+  modalObj[modal].tech.forEach((i) => {
     const li = document.createElement('li');
     li.appendChild(document.createTextNode(i));
     modalTech.appendChild(li);
-  }
+  });
 }
 
 function clearModal() {
