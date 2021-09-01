@@ -43,9 +43,7 @@ function toggleMenu() {
 
 ham.addEventListener('click', toggleMenu);
 
-const menuLinks = document.querySelectorAll('.menuLink');
-
-menuLinks.forEach(
+document.querySelectorAll('.menuLink').forEach(
   (menuLink) => {
     menuLink.addEventListener('click', toggleMenu);
   },
@@ -90,13 +88,8 @@ const modalObj = {
   },
 };
 
-const modalTitle = document.getElementById('modalTitle');
 const modalSubt = document.getElementById('modalSubt');
-const modalDesc = document.getElementById('modalDesc');
 const modalTech = document.getElementById('modalTech');
-const modalImg = document.getElementById('modalImg');
-const modalBtn1 = document.getElementById('modalBtn1');
-const modalBtn2 = document.getElementById('modalBtn2');
 
 function addCounter() {
   const counter = document.createElement('img');
@@ -133,13 +126,13 @@ function clearModal() {
 }
 
 function popModal(modal) {
-  modalTitle.textContent = modalObj[modal].title;
+  document.getElementById('modalTitle').textContent = modalObj[modal].title;
   addSubt(modal);
-  modalDesc.textContent = modalObj[modal].desc;
+  document.getElementById('modalDesc').textContent = modalObj[modal].desc;
   addTechs(modal);
-  modalImg.src = modalObj[modal].img;
-  modalBtn1.setAttribute('onClick', `location.href='${modalObj[modal].live}';`);
-  modalBtn2.setAttribute('onClick', `location.href='${modalObj[modal].source}';`);
+  document.getElementById('modalImg').src = modalObj[modal].img;
+  document.getElementById('modalBtn1').setAttribute('onClick', `location.href='${modalObj[modal].live}';`);
+  document.getElementById('modalBtn2').setAttribute('onClick', `location.href='${modalObj[modal].source}';`);
 }
 
 const modal = document.getElementById('myModal');
