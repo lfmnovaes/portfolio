@@ -213,22 +213,29 @@ document.querySelector('form').addEventListener('submit', (event) => {
   }, 5000);
 });
 
-const name = document.getElementById('form-name').value;
-const email = document.getElementById('form-email').value;
-const text = document.getElementById('form-text').value;
-
 const store = () => {
+  const name = document.getElementById('form-name').value;
+  const email = document.getElementById('form-email').value;
+  const text = document.getElementById('form-text').value;
   const formObj = {
     name,
     email,
     text,
   };
 
-  const stringifyData = JSON.stringify(formObj);
-  localStorage.setItem('formObj', stringifyData);
+  localStorage.setItem('formObj', JSON.stringify(formObj));
 };
 
 const dataObj = localStorage.getItem('formObj');
 if (dataObj) {
   const parseObj = JSON.parse(dataObj);
+  document.getElementById('form-name').value = parseObj.name;
+  document.getElementById('form-email').value = parseObj.email;
+  document.getElementById('form-text').value = parseObj.text;
 }
+
+const allInputs = Array.from(document.querySelectorAll('.smooth_border'));
+allInputs.map((input) => {
+  input.addEventListener('keyup', store);
+  return true;
+});
