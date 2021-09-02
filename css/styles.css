@@ -489,6 +489,11 @@ a {
   width: 65%;
 }
 
+.alert {
+  color: white;
+  background-color: red;
+}
+
 /* Mobile section */
 
 @media screen and (max-width: 768px) {

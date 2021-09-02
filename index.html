@@ -255,16 +255,17 @@
       <p class="white font20-28 bold">If you have an application you are
         interested in developing, a feature that you need built or a project
         that needs coding. I’d love to help with it</p>
-      <form action="https://formspree.io/f/xdoypzpo" method="POST" 
+      <form id="form" action="https://formspree.io/f/xdoypzpo" method="POST" 
         class="form d-flex">
         <input class="usr_detail smooth_border" type="text" name="usr-name"
           aria-label="Type your name" required maxlength="30" placeholder="Your name">
-        <input class="usr_detail smooth_border" id="usremail" type="email" name="usr-email"
+        <input id="form-email" class="usr_detail smooth_border" type="email" name="usr-email"
           aria-label="Type your email" required placeholder="name@mail.com">
+        <div class="alert"></div>
         <textarea class="usr_comment smooth_border" name="usr-message" required
           aria-label="Write your message" maxlength="500"
           placeholder="Write your message here"></textarea>
-        <button class="button 500" id="usrbtn" type="submit">Get In Touch</button>
+        <button id="form-btn" class="button 500" type="submit">Get In Touch</button>
       </form>
     </footer>
     <script src="js/scripts.js"></script>

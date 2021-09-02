@@ -193,11 +193,21 @@ window.onclick = function clickOut(event) {
   }
 };
 
-const usrEmail = document.getElementById('usremail');
-function haveUpper(str) { return /[A-Z]/.test(str); }
-
-
-const usrBtn = document.getElementById('usrbtn');
-usrBtn.onclick = function clickBtn (){
-  alert(haveUpper(usrEmail.innerText));
+function haveUpper(str) {
+  return /[A-Z]/.test(str);
 }
+
+document.querySelector('form').addEventListener('submit', (event) => {
+  const formEmail = document.getElementById('form-email');
+  const alert = document.querySelector('.alert');
+  if (haveUpper(formEmail.value)) {
+    alert.innerHTML = 'Your e-mail needs to be in lowercase';
+    event.preventDefault();
+  } else {
+    alert.innerHTML = '';
+  }
+
+  setTimeout(() => {
+    alert.innerHTML = '';
+  }, 5000);
+});
