@@ -212,3 +212,23 @@ document.querySelector('form').addEventListener('submit', (event) => {
     alert.style.visibility = 'hidden';
   }, 5000);
 });
+
+const name = document.getElementById('form-name').value;
+const email = document.getElementById('form-email').value;
+const text = document.getElementById('form-text').value;
+
+const store = () => {
+  const formObj = {
+    name,
+    email,
+    text,
+  };
+
+  const stringifyData = JSON.stringify(formObj);
+  localStorage.setItem('formObj', stringifyData);
+};
+
+const dataObj = localStorage.getItem('formObj');
+if (dataObj) {
+  const parseObj = JSON.parse(dataObj);
+}
