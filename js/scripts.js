@@ -226,13 +226,15 @@ const store = () => {
   localStorage.setItem('formObj', JSON.stringify(formObj));
 };
 
-const dataObj = localStorage.getItem('formObj');
-if (dataObj) {
-  const parseObj = JSON.parse(dataObj);
-  document.getElementById('form-name').value = parseObj.name;
-  document.getElementById('form-email').value = parseObj.email;
-  document.getElementById('form-text').value = parseObj.text;
-}
+window.onload = () => {
+  const dataObj = localStorage.getItem('formObj');
+  if (dataObj) {
+    const parseObj = JSON.parse(dataObj);
+    document.getElementById('form-name').value = parseObj.name;
+    document.getElementById('form-email').value = parseObj.email;
+    document.getElementById('form-text').value = parseObj.text;
+  }
+};
 
 const allInputs = Array.from(document.querySelectorAll('.smooth_border'));
 allInputs.map((input) => {
