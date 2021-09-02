@@ -202,12 +202,13 @@ document.querySelector('form').addEventListener('submit', (event) => {
   const alert = document.querySelector('.alert');
   if (haveUpper(formEmail.value)) {
     alert.innerHTML = 'Your e-mail needs to be in lowercase';
+    alert.style.visibility = 'visible';
     event.preventDefault();
   } else {
-    alert.innerHTML = '';
+    alert.style.visibility = 'hidden';
   }
 
   setTimeout(() => {
-    alert.innerHTML = '';
+    alert.style.visibility = 'hidden';
   }, 5000);
 });

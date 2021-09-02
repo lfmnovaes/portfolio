@@ -380,6 +380,7 @@ a {
 }
 
 .contact .button {
+  margin-top: 0;
   margin-bottom: 32px;
 }
 
@@ -490,8 +491,11 @@ a {
 }
 
 .alert {
-  color: white;
-  background-color: red;
+  visibility: hidden;
+  padding: 0 8px;
+  border-radius: 8px;
+  color: #6070ff;
+  background-color: white;
 }
 
 /* Mobile section */
