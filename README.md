@@ -41,9 +41,9 @@ An updated web browser
 
 👤 **Luís Fernando**
 
-- GitHub: [@lfmnovaes](https://github.com/lfmnovaes)
-- Twitter: [@lfmnovaes](https://twitter.com/lfmnovaes)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/lfmnovaes/)
+- GitHub: [![@lfmnovaes](https://img.shields.io/github/watchers/lfmnovaes/portfolio?color=lightgray&style=plastic&labelColor=blue)](https://github.com/lfmnovaes)
+- Twitter: [![@lfmnovaes](https://img.shields.io/twitter/follow/lfmnovaes?style=plastic&labelColor=blue)](https://www.twitter.com/lfmnovaes/)
+- LinkedIn: [![@lfmnovaes](https://img.shields.io/badge/LinkedIn-blue?style=plastic&logo=linkedin)](https://www.linkedin.com/in/lfmnovaes/)
 
 ## 🤝 Contributing
 
